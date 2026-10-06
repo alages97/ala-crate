@@ -1,0 +1,42 @@
+[data]
+interval = "4h"
+# 1,080 four-hour bars is 180 days.
+bars = 1080
+gecko_page_delay_ms = 6100
+
+[strategy]
+initial_capital = "10000"
+trade_notional_usd = "1000"
+quantity_step = "1"
+min_net_entry_edge_bps = "5"
+exit_basis_bps = "0"
+# Seven days at four-hour resolution.
+max_hold_bars = 42
+cooldown_bars = 1
+# Require at least 10x the intended order notional in completed-bar turnover
+# on both legs. This is only a causal liquidity proxy, not an order-book fill.
+min_bar_volume_usd = "10000"
+allow_solana_spot = true
+allow_hyperliquid_spot = true
+allow_perp_perp = true
+
+# The current 30 bps PumpSwap fee is conservatively applied to the whole
+# sample; it was 25 bps before the May 2026 fee change.
+[strategy.costs.solana_spot]
+taker_fee_bps = "30"
+slippage_bps = "5"
+
+[strategy.costs.hyperliquid_spot]
+taker_fee_bps = "7"
+slippage_bps = "3"
+
+[strategy.costs.hyperliquid_perp]
+taker_fee_bps = "4.5"
+slippage_bps = "2"
+
+[strategy.costs.lighter_perp]
+taker_fee_bps = "0"
+slippage_bps = "3"
+
+[output]
+directory = "../backtest-output/pump-arb-4h"

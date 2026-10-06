@@ -1,0 +1,28 @@
+schema_version = 1
+
+# Monad mainnet only. The process verifies chain ID 143 before quoting.
+rpc_http_url = "https://rpc.monad.xyz"
+
+# Current Kuru mainnet native MON/USDC market. `auto` tries a V2-unique
+# interface first and otherwise validates the legacy market parameters.
+kuru_market = "0x065C9d28E428A0db40191a54d33d5b7c71a9C394"
+kuru_version = "auto"
+
+# Files are create-new: choose a fresh override with --output for each run.
+output_path = "data/kuru-monad/kuru-shadow.ndjson"
+
+# Exact decimal USDC sizes. Four sizes require sixteen quote calls per probed
+# block, plus header and contract-identity calls; use a dedicated RPC for long
+# captures if the public endpoint rate-limits this workload.
+notionals_usdc = ["100", "500", "1000", "5000"]
+duration_seconds = 21600
+block_poll_interval_ms = 100
+request_timeout_ms = 5000
+
+# Screening threshold only. Records are explicitly not gas-adjusted or atomic
+# simulations, and the legacy Kuru estimator cannot prove full input use.
+candidate_threshold_bps = "5"
+estimate_legacy_kuru_gas = true
+
+# Prometheus endpoint: http://127.0.0.1:9904/metrics
+metrics_bind = "127.0.0.1:9904"

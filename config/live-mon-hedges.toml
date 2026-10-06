@@ -1,0 +1,39 @@
+schema_version = 1
+listen_address = "127.0.0.1:9102"
+metrics_listen_address = "127.0.0.1:9906"
+log_filter = "info,wide_quoter=debug"
+
+[runtime]
+publish_interval_ms = 50
+fanout_capacity = 256
+max_clients = 4
+client_write_timeout_ms = 250
+client_max_frame_age_ms = 250
+reconnect_initial_ms = 250
+reconnect_max_ms = 30000
+websocket_operation_timeout_ms = 10000
+websocket_read_timeout_ms = 90000
+bbo_timeout_ms = 30000
+http_timeout_ms = 10000
+max_websocket_message_bytes = 2097152
+max_exchange_lag_ms = 2500
+max_future_skew_ms = 1000
+shutdown_timeout_ms = 5000
+
+# Binance and Bybit MON perps are already present in the broader Kuru recorder.
+[feeds.binance]
+enabled = false
+symbol = "MONUSDT"
+
+[feeds.bybit]
+enabled = false
+symbol = "MONUSDT"
+
+[feeds.hyperliquid]
+enabled = true
+symbol = "MON"
+
+[feeds.lighter]
+enabled = true
+symbol = "MON"
+market_index = 91

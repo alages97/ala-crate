@@ -1,0 +1,41 @@
+schema_version = 1
+listen_address = "127.0.0.1:9101"
+metrics_listen_address = "127.0.0.1:9900"
+log_filter = "info,wide_quoter=debug"
+
+[runtime]
+# Each market publishes at most once per interval; the newest complete BBO wins.
+publish_interval_ms = 50
+fanout_capacity = 256
+max_clients = 16
+# Slow clients are disconnected before they can consume stale prices.
+client_write_timeout_ms = 250
+client_max_frame_age_ms = 250
+reconnect_initial_ms = 250
+reconnect_max_ms = 30000
+# Deadline for the WebSocket handshake and every outbound control frame.
+websocket_operation_timeout_ms = 10000
+websocket_read_timeout_ms = 90000
+bbo_timeout_ms = 30000
+http_timeout_ms = 10000
+max_websocket_message_bytes = 2097152
+max_exchange_lag_ms = 2500
+max_future_skew_ms = 1000
+shutdown_timeout_ms = 5000
+
+[feeds.binance]
+enabled = true
+symbol = "BTCUSDT"
+
+[feeds.bybit]
+enabled = true
+symbol = "BTCUSDT"
+
+[feeds.hyperliquid]
+enabled = true
+symbol = "BTC"
+
+[feeds.lighter]
+enabled = true
+symbol = "BTC"
+market_index = 1

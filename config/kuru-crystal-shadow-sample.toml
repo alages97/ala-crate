@@ -1,0 +1,16 @@
+schema_version = 1
+rpc_http_url = "https://rpc.monad.xyz"
+kuru_market = "0x065C9d28E428A0db40191a54d33d5b7c71a9C394"
+kuru_version = "auto"
+
+counterparty = "crystal"
+crystal_market = "0x39fAE95717cfD4bdA22317F1c124660A166b6BEc"
+
+output_path = "data/kuru-monad/kuru-crystal-shadow-sample.ndjson"
+notionals_usdc = ["100", "500", "1000", "5000"]
+duration_seconds = 300
+block_poll_interval_ms = 1000
+request_timeout_ms = 5000
+candidate_threshold_bps = "5"
+estimate_legacy_kuru_gas = false
+metrics_bind = "127.0.0.1:9908"

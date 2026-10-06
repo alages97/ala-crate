@@ -1,0 +1,248 @@
+{
+  "3GQqWzzPwXwCfTRXTeTVyoYx9YoFSu4nEhq1LgPXAcdK": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "3G69Ahpf8CCxPfPE8XKfB2nCzazBKrYUguSwZwKTBR3k",
+    "creator": "ggavomQtmonEqVzst8DpT8L5RiFRxvmDVgNpXVvbiur",
+    "canonical": false
+  },
+  "3cToB4koeqTdtfhU1gWFdq7TJKvw5CviXcu6A1PMgfD5": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "5JdHsYoPQyBBcWKp2mgkqqE84oeALfz7kKQZA7NodH5m",
+    "creator": "4Ji4xVwi8dtuRPTz6PUP4ogscqfbSgPDLs1ftT1LsrTB",
+    "canonical": false
+  },
+  "4ApFQYGn4X18tCFwXV6PVWYmfvvJPm2jTs5yhdYvdSeM": {
+    "base_mint": "6ZG6fMHaE7NpubJr16G8nFLBg91rH5kU5SVpqUmQpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "GWZUCF3vJmMRKJXUsaDqWARpzrF9GVUFdA21RZ7GRhN7",
+    "canonical": true
+  },
+  "59NHPZRhePbivqTebLrfYEBZPphr4PSffA5fq2Pj73xU": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "6BZjFKrL1sKUZAqBxT2cEN3ao8KdREypQjBTD6U6raZz",
+    "creator": "2ZTSXwthLSuSijgE5Nqp8ksKJGHia1oufGTjSyEjbcjn",
+    "canonical": false
+  },
+  "59hDTxZ7Weahm6yGawYjZbUTKiLRq6dwCuMtb4j7ouoz": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "126xzxZR7r2RihdfFeuXFL6HqxYUDNb2eNZD9jG9x8jv",
+    "creator": "2jHKozNLDZyVez98yzQDKfyS3yW1nPSB4UCDh9fWvxLJ",
+    "canonical": false
+  },
+  "5hpfYjg8XNzAEu1LDa4EYmBd4dkMp5dh6WtHwSAfi7v": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "Dqfz9Bto9VW7SYJBCz5MYgn4UFw3pqs47ebSaW53GuE8",
+    "creator": "FPn28kHUYXCcUX7v6sbj9YQv2VfXUYDYgYW83HsqZUo2",
+    "canonical": false
+  },
+  "5yVoPDLVQ8KGFziZLdSFusZcHj12KE8NW8MqrBbKZixu": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "JByptcPKD9sAtmPwv2ZhSgN1EBuAPBpcbJp9si3jDWWh",
+    "creator": "1gxUjG3vzVpGHakcmGyqV6RcaMLACMucYdWcxaV4Hjx",
+    "canonical": false
+  },
+  "6PMQCJPK33nwjiDAGCfi4B8UGEja5LPR8hDfQxRCP7yG": {
+    "base_mint": "y45aMALFdTTz7YP13tEGSe2PDDQqY5n9fjYp2ihpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "3TXHmJLWTpgPAtiHHb7Az7ZhUMuVievX2u7NSu1U19oG",
+    "canonical": true
+  },
+  "6SMx2EjCikQdae1MAVprnSvfdLHbqcaMrEWmqo2xUeVG": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "SUCbWBus8WUKbw1oF1BzwHVT8Vi9uDVYD8zPfj7HMBn",
+    "creator": "3cCAJkHA7iNkFDbxiixuAqvQoK8u7TFty9nu4FBi2YD5",
+    "canonical": false
+  },
+  "6UhBpGveCtowbxjMNSg4zDchYWqsXxLVJz3BVc7XpHuw": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "8oN1XEcRGU6d8rAtGL9Y6W7C2n8urDDvfBFxCPNQtdjW",
+    "creator": "41xX6Ac2rYSnzyQ3THH2kXhe8e5Vo1mnBr2q3rxkPpYC",
+    "canonical": false
+  },
+  "6pN8JcSV2jsaPQzXin7XaoXhVM8Lp6FwzukJFdorQoio": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "AZ8jnfR5qafqSeAn2K5gHVUJmmSwX3WCb71DRkTK9vm7",
+    "creator": "6RNG8AovKq8PBog6wvjRDhWwYAwmkFDrJGGvkUmMRnVb",
+    "canonical": false
+  },
+  "72jksU8eD5dDmm6Cx5cCxDPVThHt3qmMAz1QUwu1LdFm": {
+    "base_mint": "BwzpbM9DHpCh9qu9WosyUxjKw9ZLCyHWYeKts6TKpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "6rNJY3XMxhWauvJb2aYXNvGFLVLdC2ue4sm6FXKxZAjM",
+    "canonical": true
+  },
+  "7kn9g495WtjcxyB1YgqE75CMCPJmUTnDZtgMn9utSq19": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "HH8vhoWGog35jPENWEZyo53yY81xYWrLhBuRcDevUnDB",
+    "creator": "4XvEMGmAX1cmXEkZLzy4uKjMtkFkcAWBYAwF9d56HeK1",
+    "canonical": false
+  },
+  "7ozF5bWW2yvJGfszgy8ACko3hSjJqBPanmXBgLZtJWJC": {
+    "base_mint": "2jbdBWTK2MYpuRsmEDJqETU3UMM2nN3WGtete4HUpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "9NSbkYf4HKctVkdmdjPXZ3zYgxgRZMs1oEsxSRV9sFWz",
+    "canonical": true
+  },
+  "8V3dxd4An9Jt3BNJHW7Kx8PEsUHA7HcZzQd4nFXfR2Xj": {
+    "base_mint": "DMazyLmcv1VAk29Svota88KSebGuw7BFbC1YBh9Lpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "4rzXgkq77qZXBrZ4wCCj6CpTNvkgWCkAJmcejjAqidYz",
+    "canonical": true
+  },
+  "8ZMkMgWMvSDLZisQPae9ymdvhcpH5UeLWTb2FMYk2RKU": {
+    "base_mint": "ViKiUNWGrkubQDnAxg2y7xk3codLN1MLabvqaiPpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "BtmFxZbT17udH4URit7LGjcyBKj2TkUuGYV6GNttGmbC",
+    "canonical": true
+  },
+  "8ZoCytJB2qF2QdYYKygV3ETE5sswaCVZLnHUyNmqdR6G": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "F7NVgoGjhVCKpq1iKCG26gH91GRCZNxGU6UqSagQvd1L",
+    "creator": "7U24uYw7fV2jHZqxJdMTC69RqNMvQcDmhkgN2bJwP6wt",
+    "canonical": false
+  },
+  "8azt6UrS4Pxb9ow4EZYQJSGxC1SU895vPGxLkcaqdaQf": {
+    "base_mint": "Av6wmbqNiowHpmHx7J2j9mnuUcoey4fdkTkFwgVzpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "7XEs375mTKkh8Tj8U6XPADCvvFbicKrYkyKg6fvEus3W",
+    "canonical": true
+  },
+  "8pTnM7EbeMZoGszD6ZvzqUQVAg1CjFzUcXkRoUU5dPNg": {
+    "base_mint": "Cr5enABewj7i284QEXDKZjEgYGaypCVJGnVTgfKpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "AfXdjNe2wiSLB9XBjsbYEw7RMVwHrgmGfhZwbbuiDmEN",
+    "canonical": true
+  },
+  "8u9B8USB8eyAoB5SkWc6Yf6768a9EduvaRHnJfHHQzb1": {
+    "base_mint": "9GRn6W1GBEytywaQ4N746fjt5REut7FMNEfTFRUdWfBq",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "DSmmvXsXgPWUUmHoNipiJ4xm3fn3J1PSxsUu6R5CzEj4",
+    "canonical": true
+  },
+  "9cfnNu9bMZCKwsfSGVnZddGBrXGzzYr1bw6bpa14dSZS": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "HZ4jCUs1RiYQfBnk3BmuSDzJFJBANZTYN6ZYwijqki6",
+    "creator": "9AoBiDYaZT7BnjTuX5eiDbUaQHTg2N7cTNuvU4LpWtYb",
+    "canonical": false
+  },
+  "Av6cCzWKdnn1QmXdnDMQAYHoduaBWJrjWCqLZ1byp1mK": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "31nr4vZHEWTu3oWXvwcRdimGuWKiR9b6Jb4KHdxiG3zE",
+    "creator": "84D2CUaL87yt6pwc52hZecSaQkZsVWAJEVpy72SXUqVc",
+    "canonical": false
+  },
+  "BNYzK31kxf3vh3GyjpvQ41U4ngWa9HtpiYkkSFbwpXqy": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "DivPHvWnoxsMuS5bJUxZJesc3AYxz7CXEGktZpMbonk",
+    "creator": "3iWJABQEPj9NyyicBoA7Sr9mhDybavT86qJbJqaVAiKe",
+    "canonical": false
+  },
+  "BTvkvbJyZHKMH8BwuS1hmb6wBLBUk9Behz2NBB8gv9SF": {
+    "base_mint": "A4tPT1QaD885iJd7qw5ymZyqDfBQPA3Zv6aA8hCWpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "FNTLJJ4hwFzC7G4XwbJAymc2uvJRv6gr9g9XzidabmWJ",
+    "canonical": true
+  },
+  "CV8WX6UYiHbjjLsbSSk8CtoTHAYQF6bDgsKNEd261VDQ": {
+    "base_mint": "yftbjdPbF1bdmeQTve97rFnYznyZQPSC6iphW34pump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "7DQaCdGqWsDMqMVbL8Z2jtJHmah3URDEFTFvowekQfVE",
+    "canonical": true
+  },
+  "Ci11HJaerF9W5EhTdzNUZueRdNcLDjhAw9FDppJYRgfU": {
+    "base_mint": "2t98q6JALMHnQwcdzHgoo8ouF6yaN77xn7CKtuEJpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "8mDBpB56zSymUBu4x7kTj6Ewkk23Lir4w4ZbTAZ9i9qw",
+    "canonical": true
+  },
+  "Cr9AJU69Fvf6dLb5eVZ6Cy2tLE6UGbg8kZtRDZuuSxZ1": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "3J1JZwbepuoVsBvxjdKxs5wiTWMKwWgR9wP8C8fqpump",
+    "creator": "891Gvu9nwQZx5EeGiCJdDtTu8g4s2XKSVSXZMSivxqSg",
+    "canonical": false
+  },
+  "EKuJupc2EQkbZ1X6qRjDNoGMz5RsC2jdKG2CSNgtMLJt": {
+    "base_mint": "Wem1KMxVXYYeMD42JpaW3gjk87nQvUjLLboCDrspump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "Gh45oUggBk3owoUNzgiA9X5rCvSVLZ28Dq3fKs6skCzk",
+    "canonical": true
+  },
+  "EUZf6QLwLSpv2xPnijchawYW6zo89ULvuC6MvBcusiRN": {
+    "base_mint": "Ec4HtKLGh9M6PtLcE9akcz6q27eCxvXazbYrpg83pump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "EfoAmH7hidp5YUxGBkcFo9aGM693cmph5pxkakRoGVTw",
+    "canonical": true
+  },
+  "EafyP1u7wcio7EonD6KEYQH8c62mNxY8NmafMg62x6mD": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "4mJUL99k5Rz6LBfvy4KM2Y51uAe4kk2MaviYv1CpjCAk",
+    "creator": "8nUNqaE4p3rZJk1B6vhvUvzm3czZwRX75NgsKN9Ypuun",
+    "canonical": false
+  },
+  "F1tNNUQaGopnWJYkeATesM9CtYdKi5u9iAhWy9Dho7Tf": {
+    "base_mint": "9syYiA6Dn3BX5hKHwikdPsiKSnQ8LzDakKbLEZGdpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "E5MC6ZqqtimmdvnJcyMXbbJMpBvpwfMRCkyJbyYdmk57",
+    "canonical": true
+  },
+  "Fn5QXgedbdxJC4wnugHfQgZW4VReK7iXQ7sZnWA92uqV": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "7n1DS6xdb4BMTTG1U127da6myirqgLiSXbSv2NL3vfQJ",
+    "creator": "6aAeCsQkURCGkGEJmJkhixjhee723cxeHTb2DH5VQcq8",
+    "canonical": false
+  },
+  "GBfCuY515nxemhsYmmbN2AULGXYamPzrnDizmru4cbRw": {
+    "base_mint": "DKzMgT2nK24nDt868k6QEXiLhqDu3tu3uKwLknVpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "BzeA1ohBYijbJQTUgGk5RhZT54NBnnYZaFSAt3YAnpXR",
+    "canonical": true
+  },
+  "GRxaH2Rx7SoXQ3ymyGyT2UjBcYeQsgqh8jVbFj6n8aVw": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "PfYq5PFSSax6Sb8vQgTEnsRohrUQJiECPui6ZTFa4kr",
+    "creator": "7RkVVQMybii4qk7dj38aQEZGAKfFokzUBsVLP3KVQGQs",
+    "canonical": false
+  },
+  "Gc4MJsuAJ8yyX5JfLJEvQPDrRVvUCewzNcD8o1Af2r7j": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "F75GMgei3JsRhPJwDXBfiu94S8iKB6wica1g8sJAmoon",
+    "creator": "GF1i3kDUygXfd3dBGDkwQ42jduykEqBD71Fwxw4xcz8i",
+    "canonical": false
+  },
+  "Gh64nRiCQBT6nbrrTYVBzuhgQ76uDMTP8oFc4oGyMWuR": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "HNDhP13PtshyjHo5viiiNtQMN9p4BKispJGQyufziH7P",
+    "creator": "mqdHxSN8qvkFRtDGv5BLCPG7ywQgwSdh5iHmqiwdHv8",
+    "canonical": false
+  },
+  "Hjg6mjbGhdSYNLoWjF5jbmvtW56XHivvSMNbAaZ7XLEy": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "HDarZ7DPH2q5qNFVF9eAoovJi74b6UkzinGmh2juNwFC",
+    "creator": "AAJeQZo6shC11Nnm2s64wcxyGKC8SZpbw17hYwuGZ8LJ",
+    "canonical": false
+  },
+  "J3FEN5euk4SQQCxAcLoz99ygJ5qihmMJ5Vqbxk2XTPjq": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "BdgVvXHpU6shfxs4zs6aMQMgfENZg7pRdhmJAEmyupWW",
+    "creator": "2MK6XcYnjy2Xw9F3omjwBMFFnhtwKiJMTjXZhs89KS9T",
+    "canonical": false
+  },
+  "KPsNmMmxnLKt1KNLpEsawgnr5ULNYzmADSBdp6CNeRG": {
+    "base_mint": "CnrPtHUeeM6QtHjkEArLF68B2pf2TvhJfSvShaQpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "9PnULFd2kgcjmYbUxo9ckS85sKiK4s8kKoVTHGuSzFd9",
+    "canonical": true
+  },
+  "MHe9Z7AKYUUogN7wu3hXg69Q8FBeeYhkg8VA1J8gQWk": {
+    "base_mint": "tCHCHiqVVcsL69ab94xGHV8zdpKyFYNiz92Behjpump",
+    "quote_mint": "So11111111111111111111111111111111111111112",
+    "creator": "9adEXMzfu6W6sZ76V1TtdhGNTHAeZC5etLXT9UHo7rKU",
+    "canonical": true
+  },
+  "Y9iPkvtZphKw3qtSofHjdtKLvewJCrSAsSgt14bMugf": {
+    "base_mint": "So11111111111111111111111111111111111111112",
+    "quote_mint": "FM6HB1S2qud3ywpLauJ29EFRuGseguXVXTY2gkouBeh",
+    "creator": "9Eswfuqma2tg28c9PQYG75Df9FHagdYXKFPxKJN9gFPg",
+    "canonical": false
+  }
+}

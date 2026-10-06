@@ -1,0 +1,113 @@
+[package]
+name = "wide-quoter"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.87"
+description = "Venue-neutral Rust order management and wide market-making infrastructure"
+license = "MIT"
+include = [
+    "/.env.example",
+    "/.gitignore",
+    "/Cargo.lock",
+    "/Cargo.toml",
+    "/LICENSE",
+    "/LICENSES/**",
+    "/README.md",
+    "/THIRD_PARTY_NOTICES.md",
+    "/config/**",
+    "/data/**",
+    "/docs/**",
+    "/scripts/**",
+    "/src/**",
+]
+
+[lib]
+name = "wide_quoter"
+path = "src/lib.rs"
+
+[features]
+default = []
+test-support = []
+
+[[bin]]
+name = "quoter"
+path = "src/bin/quoter.rs"
+
+[[bin]]
+name = "mock-md"
+path = "src/bin/mock_md.rs"
+
+[[bin]]
+name = "live-md"
+path = "src/bin/live_md.rs"
+
+[[bin]]
+name = "md-tail"
+path = "src/bin/md_tail.rs"
+
+[[bin]]
+name = "backtest"
+path = "src/bin/backtest.rs"
+
+[[bin]]
+name = "pump-arb"
+path = "src/bin/pump_arb.rs"
+
+[[bin]]
+name = "pump-record"
+path = "src/bin/pump_record.rs"
+
+[[bin]]
+name = "pump-lead-lag"
+path = "src/bin/pump_lead_lag.rs"
+
+[[bin]]
+name = "kuru-record"
+path = "src/bin/kuru_record.rs"
+
+[[bin]]
+name = "kuru-shadow"
+path = "src/bin/kuru_shadow.rs"
+
+[[bin]]
+name = "kuru-shadow-analyze"
+path = "src/bin/kuru_shadow_analyze.rs"
+
+[[bin]]
+name = "kuru-cross-venue-analyze"
+path = "src/bin/kuru_cross_venue_analyze.rs"
+
+[dependencies]
+anyhow = "1.0"
+base64 = "0.22"
+clap = { version = "4.5", features = ["derive"] }
+csv = "1.4"
+ethers = { version = "2.0", default-features = false }
+futures-util = "0.3"
+hyperliquid_rust_sdk = "=0.6.0"
+libloading = "0.8"
+log = "0.4"
+metrics = "0.24"
+metrics-exporter-prometheus = { version = "0.18", default-features = false, features = ["http-listener"] }
+reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls"] }
+rust_decimal = { version = "1.36", features = ["serde-with-str"] }
+rustls = { version = "0.23", default-features = false, features = ["ring", "std"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+tokio = { version = "1.40", features = ["macros", "net", "rt-multi-thread", "signal", "sync", "time", "io-util"] }
+tokio-util = { version = "0.7", features = ["codec", "rt"] }
+tokio-tungstenite = { version = "0.28", default-features = false, features = ["connect", "rustls-tls-webpki-roots"] }
+toml = "0.8"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+uuid = { version = "1.10", features = ["v4"] }
+
+[dev-dependencies]
+pretty_assertions = "1.4"
+tempfile = "3.12"
+tokio = { version = "1.40", features = ["test-util"] }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

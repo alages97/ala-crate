@@ -1,0 +1,66 @@
+schema_version = 1
+instance_id = "hyperliquid-btc-wide-01"
+live_trading = true
+
+[gateway]
+venue = "hyperliquid"
+private_key_env = "HYPERLIQUID_AGENT_PRIVATE_KEY"
+account_address_env = "HYPERLIQUID_ACCOUNT_ADDRESS"
+request_timeout_ms = 5000
+
+[market_data]
+name = "local-md"
+address = "127.0.0.1:9101"
+reconnect_delay_ms = 500
+max_publisher_lag_ms = 500
+max_exchange_lag_ms = 2500
+max_future_skew_ms = 1000
+
+[quoter]
+target_market_data_symbol = "BTC"
+max_source_age_ms = 1500
+min_fresh_sources = 2
+half_spread_bps = "100"
+quote_quantity = "0.001"
+max_order_notional = "250"
+reprice_threshold_bps = "2"
+# Process-local replace/re-entry guard; cancellations are never delayed.
+min_quote_interval_ms = 1000
+
+[quoter.instrument]
+venue = "hyperliquid"
+canonical_symbol = "BTC-USD-PERP"
+venue_symbol = "BTC"
+price_tick = "1"
+quantity_step = "0.00001"
+
+[[quoter.reference_sources]]
+venue = "binance"
+symbol = "BTCUSDT"
+weight = "1"
+
+[[quoter.reference_sources]]
+venue = "bybit"
+symbol = "BTCUSDT"
+weight = "1"
+
+[[quoter.reference_sources]]
+venue = "hyperliquid"
+symbol = "BTC"
+weight = "1"
+
+[[quoter.reference_sources]]
+venue = "lighter"
+symbol = "BTC"
+weight = "1"
+
+[runtime]
+market_data_channel_capacity = 4096
+order_manager_command_capacity = 1024
+order_manager_event_capacity = 1024
+shutdown_timeout_ms = 15000
+decision_interval_ms = 100
+
+[telemetry]
+metrics_listen_address = "127.0.0.1:9898"
+log_filter = "info,wide_quoter=debug"

@@ -1,0 +1,50 @@
+schema_version = 1
+
+[data]
+# Relative paths are resolved from this configuration file's directory.
+path = "../data/hyperliquid-daily.csv"
+interval_ms = 86400000
+require_contiguous_batches = true
+
+[engine]
+initial_collateral = "100000"
+fee_bps = "4.5"
+slippage_bps = "5"
+max_gross_leverage = "1"
+max_abs_net_weight = "0.02"
+max_asset_weight = "0.125"
+min_order_notional = "10"
+apply_funding = true
+require_funding_for_open_positions = true
+liquidate_at_end = true
+
+[strategy]
+type = "momentum"
+venue = "hyperliquid"
+fast_ema_period = 20
+slow_ema_period = 50
+rsi_period = 14
+short_return_lookback_bars = 7
+long_return_lookback_bars = 30
+rebalance_every_bars = 1
+min_eligible_assets = 20
+min_open_interest_usd = "5000000"
+min_market_cap_usd = "250000000"
+min_average_volume_usd = "10000000"
+volume_lookback_bars = 7
+long_count = 5
+short_count = 5
+min_positions_per_side = 4
+long_gross = "0.5"
+short_gross = "0.5"
+max_asset_weight = "0.125"
+long_rsi_min = "55"
+short_rsi_max = "45"
+short_return_weight = "0.45"
+long_return_weight = "0.30"
+ema_gap_weight = "0.15"
+rsi_weight = "0.10"
+require_both_sides = true
+
+[output]
+directory = "../backtest-output/momentum"

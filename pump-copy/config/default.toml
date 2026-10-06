@@ -1,0 +1,34 @@
+[strategy]
+entry_mode = "either"
+initial_cash_lamports = 10000000000 # 10 SOL simulated bankroll
+order_lamports = 100000000 # 0.1 SOL, before network fee/rent
+target_multiple_bps = 20000 # net 2x including entry costs
+latency_ms = 15000 # total detection + inclusion delay; tune to actual feed
+pending_ttl_ms = 60000
+network_fee_lamports = 100000 # configurable priority fee / tip allowance
+entry_rent_lamports = 2100000 # charged on every new position, no refund assumed
+adverse_slippage_bps = 100 # additional adverse execution haircut
+max_reserve_participation_bps = 100 # order <= 1% effective quote reserves
+max_positions = 10
+max_exposure_lamports = 2000000000
+max_mark_age_ms = 30000
+trade_start_ms = 0 # set to test boundary, older observations train rankings
+allow_pre_graduation = true
+allow_post_graduation = true
+
+[selection]
+min_closed_positions = 10
+min_distinct_mints = 5
+min_history_ms = 86400000
+max_inactivity_ms = 604800000
+min_conservative_profit_lamports = 1000000000
+min_roi_bps = 1000
+max_profit_concentration_bps = 5000
+
+[flow]
+window_ms = 60000
+whale_buy_lamports = 5000000000 # >= 5 SOL bought by one wallet in window
+min_whales = 3
+min_net_inflow_lamports = 15000000000
+min_buy_sell_ratio_bps = 20000 # >= 2:1
+cooldown_ms = 60000

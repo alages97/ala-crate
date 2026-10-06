@@ -1,0 +1,29 @@
+schema_version = 1
+
+# Monad mainnet only. The process verifies chain ID 143 before quoting.
+rpc_http_url = "https://rpc.monad.xyz"
+
+# Kuru trades native MON against USDC.
+kuru_market = "0x065C9d28E428A0db40191a54d33d5b7c71a9C394"
+kuru_version = "auto"
+
+# Crystal's official Monad registry identifies this as WMON/USDC. Startup
+# rejects the market unless its pinned getMarket result is exactly WMON/USDC.
+counterparty = "crystal"
+crystal_market = "0x39fAE95717cfD4bdA22317F1c124660A166b6BEc"
+
+# Files are create-new: choose a fresh override with --output for every run.
+output_path = "data/kuru-monad/kuru-crystal-shadow.ndjson"
+
+notionals_usdc = ["100", "500", "1000", "5000"]
+duration_seconds = 21600
+block_poll_interval_ms = 100
+request_timeout_ms = 5000
+
+# Gross screen only. Native MON/WMON wrapping, gas, approvals, settlement, and
+# a combined atomic executor are not simulated by this process.
+candidate_threshold_bps = "5"
+estimate_legacy_kuru_gas = false
+
+# Prometheus endpoint: http://127.0.0.1:9907/metrics
+metrics_bind = "127.0.0.1:9907"

@@ -1,0 +1,43 @@
+[data]
+interval = "1m"
+bars = 5000
+# GeckoTerminal's public API is rate limited to roughly 10 requests/minute.
+gecko_page_delay_ms = 6100
+
+[strategy]
+initial_capital = "10000"
+trade_notional_usd = "1000"
+quantity_step = "1"
+min_net_entry_edge_bps = "5"
+exit_basis_bps = "0"
+max_hold_bars = 1440
+cooldown_bars = 5
+# Require at least 10x the intended order notional in completed-bar turnover
+# on both legs. This is only a causal liquidity proxy, not an order-book fill.
+min_bar_volume_usd = "10000"
+allow_solana_spot = true
+allow_hyperliquid_spot = true
+allow_perp_perp = true
+
+# Round-trip estimates are twice the sum of both legs' fee and slippage.
+# PumpSwap is currently 30 bps; Hyperliquid tier-0 spot/perp are 7/4.5 bps;
+# Lighter currently reports zero account trading fee. Slippage is deliberately
+# non-zero and includes coarse latency stress that candles cannot reconstruct.
+[strategy.costs.solana_spot]
+taker_fee_bps = "30"
+slippage_bps = "5"
+
+[strategy.costs.hyperliquid_spot]
+taker_fee_bps = "7"
+slippage_bps = "3"
+
+[strategy.costs.hyperliquid_perp]
+taker_fee_bps = "4.5"
+slippage_bps = "2"
+
+[strategy.costs.lighter_perp]
+taker_fee_bps = "0"
+slippage_bps = "3"
+
+[output]
+directory = "../backtest-output/pump-arb-1m"

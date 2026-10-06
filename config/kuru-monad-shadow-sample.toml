@@ -1,0 +1,21 @@
+schema_version = 1
+
+# A five-minute, rate-conscious public-RPC sample. It probes the latest block
+# once per second rather than trying to cover every Monad head.
+rpc_http_url = "https://rpc.monad.xyz"
+kuru_market = "0x065C9d28E428A0db40191a54d33d5b7c71a9C394"
+kuru_version = "auto"
+output_path = "data/kuru-monad/kuru-shadow-multiblock.ndjson"
+
+notionals_usdc = ["100", "500", "1000", "5000"]
+duration_seconds = 300
+block_poll_interval_ms = 1000
+request_timeout_ms = 5000
+candidate_threshold_bps = "5"
+
+# Skip the legacy zero-sender gas lower-bound on every sample. It is not an
+# atomic executor estimate and would add eight more RPC calls per sampled block.
+estimate_legacy_kuru_gas = false
+
+# Separate from the full-rate configuration's default port.
+metrics_bind = "127.0.0.1:9905"

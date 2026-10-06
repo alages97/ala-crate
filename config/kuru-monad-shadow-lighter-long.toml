@@ -1,0 +1,17 @@
+schema_version = 1
+rpc_http_url = "https://rpc.monad.xyz"
+kuru_market = "0x065C9d28E428A0db40191a54d33d5b7c71a9C394"
+kuru_version = "auto"
+
+# The cross-venue analyzer consumes the Kuru legs from the existing v1 record
+# shape. One $100 probe minimizes RPC work and targets the only size that had
+# consistently adequate Lighter/Hyperliquid displayed top size.
+counterparty = "uniswap_v4"
+output_path = "data/kuru-monad/kuru-lighter-long.ndjson"
+notionals_usdc = ["100"]
+duration_seconds = 21600
+block_poll_interval_ms = 500
+request_timeout_ms = 5000
+candidate_threshold_bps = "5"
+estimate_legacy_kuru_gas = false
+metrics_bind = "127.0.0.1:9910"

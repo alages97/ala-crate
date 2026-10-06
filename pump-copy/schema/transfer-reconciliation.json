@@ -1,0 +1,473 @@
+{
+  "purpose": "Instruction identities/account roles for transfer reconciliation; no event-tail semantics are asserted.",
+  "programs": {
+    "pump": {
+      "address": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+      "source": "https://raw.githubusercontent.com/pump-fun/pump-public-docs/main/idl/pump.json",
+      "retrieved_utc": "2026-10-06T04:50:35.607152+00:00",
+      "sha256": "ffe966c42f1af41652ee753fe2f1e3f7cd4077d7e6f49faf3138959c8b56064b",
+      "instructions": [
+        {
+          "name": "buy",
+          "discriminator": [
+            102,
+            6,
+            61,
+            18,
+            1,
+            218,
+            235,
+            234
+          ],
+          "accounts": [
+            "global",
+            "fee_recipient",
+            "mint",
+            "bonding_curve",
+            "associated_bonding_curve",
+            "associated_user",
+            "user",
+            "system_program",
+            "token_program",
+            "creator_vault",
+            "event_authority",
+            "program",
+            "global_volume_accumulator",
+            "user_volume_accumulator",
+            "fee_config",
+            "fee_program"
+          ],
+          "args": [
+            {
+              "name": "amount",
+              "type": "u64"
+            },
+            {
+              "name": "max_sol_cost",
+              "type": "u64"
+            },
+            {
+              "name": "track_volume",
+              "type": {
+                "defined": {
+                  "name": "OptionBool"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "buy_exact_quote_in_v2",
+          "discriminator": [
+            194,
+            171,
+            28,
+            70,
+            104,
+            77,
+            91,
+            47
+          ],
+          "accounts": [
+            "global",
+            "base_mint",
+            "quote_mint",
+            "base_token_program",
+            "quote_token_program",
+            "associated_token_program",
+            "fee_recipient",
+            "associated_quote_fee_recipient",
+            "buyback_fee_recipient",
+            "associated_quote_buyback_fee_recipient",
+            "bonding_curve",
+            "associated_base_bonding_curve",
+            "associated_quote_bonding_curve",
+            "user",
+            "associated_base_user",
+            "associated_quote_user",
+            "creator_vault",
+            "associated_creator_vault",
+            "sharing_config",
+            "global_volume_accumulator",
+            "user_volume_accumulator",
+            "associated_user_volume_accumulator",
+            "fee_config",
+            "fee_program",
+            "system_program",
+            "event_authority",
+            "program"
+          ],
+          "args": [
+            {
+              "name": "spendable_quote_in",
+              "type": "u64"
+            },
+            {
+              "name": "min_tokens_out",
+              "type": "u64"
+            }
+          ]
+        },
+        {
+          "name": "buy_exact_sol_in",
+          "discriminator": [
+            56,
+            252,
+            116,
+            8,
+            158,
+            223,
+            205,
+            95
+          ],
+          "accounts": [
+            "global",
+            "fee_recipient",
+            "mint",
+            "bonding_curve",
+            "associated_bonding_curve",
+            "associated_user",
+            "user",
+            "system_program",
+            "token_program",
+            "creator_vault",
+            "event_authority",
+            "program",
+            "global_volume_accumulator",
+            "user_volume_accumulator",
+            "fee_config",
+            "fee_program"
+          ],
+          "args": [
+            {
+              "name": "spendable_sol_in",
+              "type": "u64"
+            },
+            {
+              "name": "min_tokens_out",
+              "type": "u64"
+            },
+            {
+              "name": "track_volume",
+              "type": {
+                "defined": {
+                  "name": "OptionBool"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "buy_v2",
+          "discriminator": [
+            184,
+            23,
+            238,
+            97,
+            103,
+            197,
+            211,
+            61
+          ],
+          "accounts": [
+            "global",
+            "base_mint",
+            "quote_mint",
+            "base_token_program",
+            "quote_token_program",
+            "associated_token_program",
+            "fee_recipient",
+            "associated_quote_fee_recipient",
+            "buyback_fee_recipient",
+            "associated_quote_buyback_fee_recipient",
+            "bonding_curve",
+            "associated_base_bonding_curve",
+            "associated_quote_bonding_curve",
+            "user",
+            "associated_base_user",
+            "associated_quote_user",
+            "creator_vault",
+            "associated_creator_vault",
+            "sharing_config",
+            "global_volume_accumulator",
+            "user_volume_accumulator",
+            "associated_user_volume_accumulator",
+            "fee_config",
+            "fee_program",
+            "system_program",
+            "event_authority",
+            "program"
+          ],
+          "args": [
+            {
+              "name": "amount",
+              "type": "u64"
+            },
+            {
+              "name": "max_sol_cost",
+              "type": "u64"
+            }
+          ]
+        },
+        {
+          "name": "sell",
+          "discriminator": [
+            51,
+            230,
+            133,
+            164,
+            1,
+            127,
+            131,
+            173
+          ],
+          "accounts": [
+            "global",
+            "fee_recipient",
+            "mint",
+            "bonding_curve",
+            "associated_bonding_curve",
+            "associated_user",
+            "user",
+            "system_program",
+            "creator_vault",
+            "token_program",
+            "event_authority",
+            "program",
+            "fee_config",
+            "fee_program"
+          ],
+          "args": [
+            {
+              "name": "amount",
+              "type": "u64"
+            },
+            {
+              "name": "min_sol_output",
+              "type": "u64"
+            }
+          ]
+        },
+        {
+          "name": "sell_v2",
+          "discriminator": [
+            93,
+            246,
+            130,
+            60,
+            231,
+            233,
+            64,
+            178
+          ],
+          "accounts": [
+            "global",
+            "base_mint",
+            "quote_mint",
+            "base_token_program",
+            "quote_token_program",
+            "associated_token_program",
+            "fee_recipient",
+            "associated_quote_fee_recipient",
+            "buyback_fee_recipient",
+            "associated_quote_buyback_fee_recipient",
+            "bonding_curve",
+            "associated_base_bonding_curve",
+            "associated_quote_bonding_curve",
+            "user",
+            "associated_base_user",
+            "associated_quote_user",
+            "creator_vault",
+            "associated_creator_vault",
+            "sharing_config",
+            "user_volume_accumulator",
+            "associated_user_volume_accumulator",
+            "fee_config",
+            "fee_program",
+            "system_program",
+            "event_authority",
+            "program"
+          ],
+          "args": [
+            {
+              "name": "amount",
+              "type": "u64"
+            },
+            {
+              "name": "min_sol_output",
+              "type": "u64"
+            }
+          ]
+        }
+      ],
+      "source_commit": "cb188ce08b5069196eef1f3e4a0c43b70099793b"
+    },
+    "pump_amm": {
+      "address": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+      "source": "https://raw.githubusercontent.com/pump-fun/pump-public-docs/main/idl/pump_amm.json",
+      "retrieved_utc": "2026-10-06T04:50:35.889030+00:00",
+      "sha256": "2091433899b07d003d98118ae6cd3c628960fd393b40710b6e15bce6d0e7f2d1",
+      "instructions": [
+        {
+          "name": "buy",
+          "discriminator": [
+            102,
+            6,
+            61,
+            18,
+            1,
+            218,
+            235,
+            234
+          ],
+          "accounts": [
+            "pool",
+            "user",
+            "global_config",
+            "base_mint",
+            "quote_mint",
+            "user_base_token_account",
+            "user_quote_token_account",
+            "pool_base_token_account",
+            "pool_quote_token_account",
+            "protocol_fee_recipient",
+            "protocol_fee_recipient_token_account",
+            "base_token_program",
+            "quote_token_program",
+            "system_program",
+            "associated_token_program",
+            "event_authority",
+            "program",
+            "coin_creator_vault_ata",
+            "coin_creator_vault_authority",
+            "global_volume_accumulator",
+            "user_volume_accumulator",
+            "fee_config",
+            "fee_program"
+          ],
+          "args": [
+            {
+              "name": "base_amount_out",
+              "type": "u64"
+            },
+            {
+              "name": "max_quote_amount_in",
+              "type": "u64"
+            },
+            {
+              "name": "track_volume",
+              "type": {
+                "defined": {
+                  "name": "OptionBool"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "buy_exact_quote_in",
+          "discriminator": [
+            198,
+            46,
+            21,
+            82,
+            180,
+            217,
+            232,
+            112
+          ],
+          "accounts": [
+            "pool",
+            "user",
+            "global_config",
+            "base_mint",
+            "quote_mint",
+            "user_base_token_account",
+            "user_quote_token_account",
+            "pool_base_token_account",
+            "pool_quote_token_account",
+            "protocol_fee_recipient",
+            "protocol_fee_recipient_token_account",
+            "base_token_program",
+            "quote_token_program",
+            "system_program",
+            "associated_token_program",
+            "event_authority",
+            "program",
+            "coin_creator_vault_ata",
+            "coin_creator_vault_authority",
+            "global_volume_accumulator",
+            "user_volume_accumulator",
+            "fee_config",
+            "fee_program"
+          ],
+          "args": [
+            {
+              "name": "spendable_quote_in",
+              "type": "u64"
+            },
+            {
+              "name": "min_base_amount_out",
+              "type": "u64"
+            },
+            {
+              "name": "track_volume",
+              "type": {
+                "defined": {
+                  "name": "OptionBool"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "sell",
+          "discriminator": [
+            51,
+            230,
+            133,
+            164,
+            1,
+            127,
+            131,
+            173
+          ],
+          "accounts": [
+            "pool",
+            "user",
+            "global_config",
+            "base_mint",
+            "quote_mint",
+            "user_base_token_account",
+            "user_quote_token_account",
+            "pool_base_token_account",
+            "pool_quote_token_account",
+            "protocol_fee_recipient",
+            "protocol_fee_recipient_token_account",
+            "base_token_program",
+            "quote_token_program",
+            "system_program",
+            "associated_token_program",
+            "event_authority",
+            "program",
+            "coin_creator_vault_ata",
+            "coin_creator_vault_authority",
+            "fee_config",
+            "fee_program"
+          ],
+          "args": [
+            {
+              "name": "base_amount_in",
+              "type": "u64"
+            },
+            {
+              "name": "min_quote_amount_out",
+              "type": "u64"
+            }
+          ]
+        }
+      ],
+      "source_commit": "cb188ce08b5069196eef1f3e4a0c43b70099793b"
+    }
+  }
+}
